@@ -2,8 +2,8 @@
 
 Implementation of music genre classifier using Deep Learning Model called Convolutional Neural Networks(CNNs) on Marsyas Dataset,CNNs are widely used for image classification problems because with the help of filters we can try to identify lines which further identifies shapes which leads to the detection of objects.The filters can be used as detectors and we can change their weights with the help of back-propagation.
 
-There are a total of 10 genres in the dataset:
-1.Blues
+There are a total of 10 genres in the dataset:/n
+1.Blues/n
 2.Reggae
 3.Rock
 4.Disco
