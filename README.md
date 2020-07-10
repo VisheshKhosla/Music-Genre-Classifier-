@@ -15,7 +15,7 @@ There are a total of 10 genres in the dataset:</br>
 ## Preparation of Data
 </br>
 Since CNNs work really well on images we can represent audio as  images of depth 1 using spectrogram by applying short time fourier transformation or by using MFCCS(mel frequency cepstral coeffecients) which helps us in perceiving the sound as human auditory system,in the given project MFCCS have been used as inputs.In order to create more samples,the songs which are of 30 seconds have been chopped off into 10 segments leading to a total of 10,000 samples.The data has been then saved into a json file.Each of the segment has a  (130x13)  input data  where we have 130 MFCC vectors,each of them having 13 coeffecients.Librosa is a great library for doing anny work related to audio processing and we can easily convert an audio to a spectrogram or MFCC using librosa.The data has been furthere split into Train,Validation and Test data,validation data really helps us in testing our accuracy and we change the parameters before the application of the model on test data.</br>
-![image](https://user-images.githubusercontent.com/44138895/87200956-46f1b380-c31b-11ea-9ce6-f7cbaf4b12a8.jpeg)
+![](MFCC.png)
 </br>
 ## Architecture of the Model
 </br>
