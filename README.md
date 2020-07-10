@@ -19,7 +19,7 @@ Since CNNs work really well on images we can represent audio as  images of depth
 
 ![MFCC](https://user-images.githubusercontent.com/44138895/87200956-46f1b380-c31b-11ea-9ce6-f7cbaf4b12a8.jpeg)
 
-
+This is how MFCCs look like.</br>
 ## Architecture of the Model
 </br>
 First of all the input is fed in the form of MFCC to a convolutional layer with the activation function relu and 32 filters with a grid size of (3x3) and then to a pooling layer with a filter of (3x3) and a stride of 2 in the horizontal and vertical direction.Similary  another convolutional and a pooling layer is  with the same parameters is added  in order to improve the performance by increasing the complexity of the network.After that data is flattened and fed into the dense layer with activation function relu and a total of 64 neurons in it.Dropout layer has been added to avoid overfitting by elimination some neurons,the dropout probability is 0.3 and the elimination of neurons deletes all of its connections which leads to making the model robust.Finally the output has a total of 10 neurons,each of them having their activation function as softmax in order to have a uniform probability distrubution.</br>
